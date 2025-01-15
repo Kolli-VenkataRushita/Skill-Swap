@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple_wallpaper"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/leftArrow"
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:onClick="mvdashboard"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="Back Arrow"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+        android:background="@drawable/lavender_border"
+    android:padding="20dp">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lavender_border"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:padding="8dp"
+            android:hint="Email"
+            android:drawablePadding="8dp"
+            android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/skill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lavender_border"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:padding="8dp"
+        android:hint="Skill Name"
+        android:drawablePadding="8dp"
+        android:textColor="#000000" />
+
+    <Spinner
+        android:id="@+id/proficiencySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lavender_border"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:maxLines="5"
+        android:gravity="top|start" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Skill"
+        android:onClick="addDB"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center" />
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
